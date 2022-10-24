@@ -46,6 +46,12 @@ body {
   a:focus:after {
     width: 100%
   }
+
+  .info {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
   
   .links {
     list-style: none;
@@ -61,8 +67,7 @@ body {
     color: white;
   }
 
-  .instfoto, .ttfoto {
-    padding-right: 5px;
+  .instfoto, .ttfoto, .gtfoto {
     width: 20px;
     height: 20px;
   }
