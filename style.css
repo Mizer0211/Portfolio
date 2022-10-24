@@ -1,26 +1,28 @@
 body {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-image: url("foto/waterhill2.jpg");
-    background-color: #ecd5c3;
-  }
-  header
-  
+    margin: 0px;
+    background-image: url('foto/Waterfall2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
   .top_menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px 10%;
-    background-color: #008080;
+    background: transparent;  
+    
   }
   
   a {
     text-decoration: none;
     font-family:"impact";
-    font-weight: 200px;
+    font-weight: 220px;
     letter-spacing: 2px;
-    color: white;
+    color: rgba(88, 0, 252, 0.712);
   }
   
   li,a {
@@ -54,4 +56,12 @@ body {
     padding: 0 40px;
   }
   
-  
+  .about {
+    text-align: center; 
+    color: white;
+  }
+
+  .instfoto {
+    width: 16px;
+    height: 16px;
+  }
