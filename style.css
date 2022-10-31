@@ -7,14 +7,12 @@ body {
     background-attachment: fixed; 
     background-size: 100% 100%;
 }
-
-  .top_menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 28px 4%;
-    background: transparent;  
-    
+    .top_menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 4%;
+      background: transparent;  
   }
   
   a {
@@ -22,7 +20,7 @@ body {
     font-family:"impact";
     font-weight: 220px;
     letter-spacing: 2px;
-    color: rgba(88, 0, 252, 0.712);
+    color: #e2cd13b6; /*#e2cd13b6   #5800fcb6*/
   }
   
   li,a {
@@ -41,11 +39,43 @@ body {
     content: "";
     transition: width 0.3s;
   }
-  
-  a:hover:after,
-  a:focus:after {
-    width: 100%
+
+  a { /*logotipa hoveris */
+    background-image: linear-gradient(
+      to right,
+      #54b3d6,
+      #54b3d6 50%,
+      #e2cd13b6 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
   }
+  
+  a:before{
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+   background-position: 0;
+  }
+  
+  a:hover::before{
+    width: 100%;
+  } /* logo hovera beigums*/
 
   .info {
     display: flex;
@@ -70,4 +100,78 @@ body {
   .instfoto, .ttfoto, .gtfoto {
     width: 20px;
     height: 20px;
+  }
+
+  .about {
+    text-align: left;
+    padding-left: 13%;
+    padding-top: 5%;
+  }
+
+  .aboutme {
+    padding-left: 9%;
+   }
+
+  .myinfo2, .myinfo5 {
+    padding-left: 4%;
+  }
+
+  .myinfo3 {
+    padding-left: 1%;
+  }
+
+
+  .slider {
+    width: 500px;
+    height: 300px;
+    background-color: #4f397900;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: 250px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image-container {
+    width: 1500px;
+    background-color: #976fe000;
+    height: 300px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 3s;
+    -moz-transition: left 3s;
+    -o-transition: left 3s;
+    transition: left 3s;
+  }
+  .slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  #slide-1:target ~ .image-container {
+    left: 0px;
+  }
+  #slide-2:target ~ .image-container {
+    left: -500px;
+  }
+  #slide-3:target ~ .image-container {
+    left: -1000px;
+  }
+  .buttons {
+    position: relative;
+    top: -20px;
+  }
+
+  .buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: #2e7ec9c4;
+  }
+
+  .hobby {
+    color: white;
+    text-align: right;
+    padding-right: 320px;
   }
