@@ -15,12 +15,25 @@ body {
       background: transparent;  
   }
   
-  a {
+  .logo, a {
     text-decoration: none;
     font-family:"impact";
     font-weight: 220px;
     letter-spacing: 2px;
-    color: #e2cd13b6; /*#e2cd13b6   #5800fcb6*/
+    color: #5800fcb6; /*#e2cd13b6   #5800fcb6*/
+  }
+
+  .info:hover {
+    color: white;
+  }
+
+  .logo:hover {
+    color: white;
+  }
+
+
+  .info:active {
+    color: #e2cd13b6;
   }
   
   li,a {
@@ -39,44 +52,7 @@ body {
     content: "";
     transition: width 0.3s;
   }
-
-  a { /*logotipa hoveris */
-    background-image: linear-gradient(
-      to right,
-      #54b3d6,
-      #54b3d6 50%,
-      #e2cd13b6 50%
-    );
-    background-size: 200% 100%;
-    background-position: -100%;
-    display: inline-block;
-    padding: 5px 0;
-    position: relative;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
-  }
   
-  a:before{
-    content: '';
-    background: #54b3d6;
-    display: block;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 0;
-    height: 3px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  a:hover {
-   background-position: 0;
-  }
-  
-  a:hover::before{
-    width: 100%;
-  } /* logo hovera beigums*/
-
   .info {
     display: flex;
     gap: 5px;
