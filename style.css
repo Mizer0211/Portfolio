@@ -11,8 +11,8 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 28px 4%;
-      background: transparent;  
+      padding: 15px 4%;
+      background: #590db12c;  
   }
   
   .logo, a {
@@ -230,7 +230,15 @@ body {
 }
 
 .text-area {
+  border-radius: 10px;
   margin-left: 3%;
+  width: 400px;
+  height: 200px;
+  resize: none;
+  color: #69cdf5;
+  outline: none;
+  background-color: #702dbd69;
+  border-color: #6d1dc9;
 }
 
 .label1 {
@@ -253,4 +261,45 @@ body {
   font-size: 16px;
   border: none;
   color: white;
+  border-bottom: 1px solid #69cdf5;
+  border-radius: 5px;
+  background-color: #702dbd41;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-label {
+  color: white;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.form-input:focus ~ .form-label,
+.form-input ~ .form-label {
+  margin-left: 4px;
+  top: 1px;
+  font-size: 15px;
+  color: #ad7de4;
+}
+
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown) ~ .form-label {
+  top: -18px;
+  font-size: 12px;
+  color: #ad7de4;
+}
+
+.button {
+  margin-left: 5%;
+  margin-top: 1%;
+  /***color: #69cdf5;
+  background-color: #ad7de4;**/
+}
+
+.sendbtn {
+  border-radius: 8px;
+  color: #69cdf5;
+  background-color: #6d1dc9;
 }
