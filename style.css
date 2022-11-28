@@ -230,5 +230,27 @@ body {
 }
 
 .text-area {
-  margin-left: 5%;
+  margin-left: 3%;
+}
+
+.label1 {
+  margin-bottom: 30px;
+  position: relative;
+  margin-left: 3%;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.label2 {
+  margin-bottom: 30px;
+  position: relative;
+  margin-left: 3%;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.form-input {
+  font-size: 16px;
+  border: none;
+  color: white;
 }
