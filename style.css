@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=ABeeZee");
+
+*{
+    font-family: ABeeZee;
+    font-weight: normal;
+}
+
 body {
     box-sizing: border-box;
     margin: 0px;
@@ -12,7 +19,8 @@ body {
       justify-content: space-between;
       align-items: center;
       padding: 15px 4%;
-      background: #590db12c;  
+      background: #590db169;
+      border: 1px solid #6d1dc9;
   }
   
   .logo, a {
@@ -114,6 +122,7 @@ body {
   }
 
   .aboutme {
+    font-family: 'Times New Roman';
     margin-top: 5%;
     margin-left: 3%;
     margin-right: 55%;
@@ -147,6 +156,7 @@ body {
   }
 
   .hobby {
+    font-family: 'Times New Roman';
     margin-top: 100px;
     color: #b0bed6f5;
     text-align: right;
@@ -200,7 +210,7 @@ body {
     height: 15px;
     width: 15px;
     border-radius: 50px;
-    background-color: #2e7ec9c4;
+    background-color: #45a2c7;
   }
 
 
@@ -236,6 +246,7 @@ body {
   height: 200px;
   resize: none;
   color: #69cdf5;
+  font-size: 17px;
   outline: none;
   background-color: #702dbd69;
   border-color: #6d1dc9;
@@ -260,10 +271,10 @@ body {
 .form-input {
   font-size: 16px;
   border: none;
-  color: white;
+  color: #69cdf5;
   border-bottom: 1px solid #69cdf5;
   border-radius: 5px;
-  background-color: #702dbd41;
+  background-color: #702dbd69;
   outline: none;
   transition: 0.3s;
 }
@@ -281,25 +292,56 @@ body {
   margin-left: 4px;
   top: 1px;
   font-size: 15px;
-  color: #ad7de4;
+  color: #69cdf5;
 }
 
 .form-input:focus ~ .form-label,
 .form-input:not(:placeholder-shown) ~ .form-label {
   top: -18px;
   font-size: 12px;
-  color: #ad7de4;
+  color: #79d2f5;
 }
 
 .button {
-  margin-left: 5%;
+  margin-left: 21%;
   margin-top: 1%;
+  margin-bottom: 50px;
   /***color: #69cdf5;
   background-color: #ad7de4;**/
 }
 
-.sendbtn {
-  border-radius: 8px;
+.label1, .label2 {
+  margin-left: 9%;
+}
+
+.datu-iev, .datums{
+  margin-top: 20px;
+}
+
+.datums {
   color: #69cdf5;
-  background-color: #6d1dc9;
+  background-color: #702dbd69;
+  border-radius: 15px;
+  border: 1px solid #6d1dc9;
+}
+
+.date-text {
+  margin-left: 13%;
+  color: #69cdf5; 
+}
+
+.sendbtn {
+  width: 80px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #6d1dc9;
+  color: #69cdf5;
+  background-color: #702dbd69;
+  cursor: pointer;
+}
+
+.form {
+  position: relative;
+  margin-left: 10%;
 }
